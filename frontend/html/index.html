@@ -15,10 +15,106 @@
         <script src="../javascript/index.js"></script>
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row text-center">
-                <h1 class="display-1">A szerver fut.</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Autók</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Főoldal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/hozzaadas">Autók hozzáadása</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/megtekintes">Autók megtekintése</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mt-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img
+                            src="https://via.placeholder.com/300x200"
+                            class="card-img-top"
+                            alt="Autó"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Opel Astra</h5>
+                            <p class="card-text">
+                                Az Opel Astra egy népszerű kompakt autó, amely megbízhatóságáról
+                                ismert.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img
+                            src="https://via.placeholder.com/300x200"
+                            class="card-img-top"
+                            alt="Autó"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">BMW M3</h5>
+                            <p class="card-text">
+                                A BMW M3 egy sportos szedán, amely nagy teljesítményt és vezetési
+                                élményt kínál.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img
+                            src="https://via.placeholder.com/300x200"
+                            class="card-img-top"
+                            alt="Autó"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Audi A4</h5>
+                            <p class="card-text">
+                                Az Audi A4 elegáns megjelenésével és fejlett technológiájával tűnik
+                                ki.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img
+                            src="https://via.placeholder.com/300x200"
+                            class="card-img-top"
+                            alt="Autó"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Toyota Corolla</h5>
+                            <p class="card-text">
+                                A Toyota Corolla világszerte az egyik legmegbízhatóbb és
+                                legnépszerűbb autó.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <script src="/frontend/bootstrap/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
