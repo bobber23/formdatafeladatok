@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Főoldal</title>
+        <!--!Bootstrap-->
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+        <!--?Popper: dropdowns, popovers, tooltips-->
+        <script src="../bootstrap/js/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <!--!CSS-->
+        <link rel="stylesheet" href="../css/hozzaadas.css" />
+        <!--!JavaScript-->
+        <script src="../javascript/hozzaadas.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Autók</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Főoldal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Autók hozzáadása</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/megtekintes">Autók megtekintése</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mt-3 mb-3">
+            <div class="card p-4">
+                <h2 class="mb-4 text-center">Autó hozzáadása</h2>
+
+                <form id="carForm">
+                    <div class="mb-3">
+                        <label class="form-label">Márka és modell</label>
+                        <input type="text" class="form-control" name="marka_modell" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Gyártási év</label>
+                        <input type="number" class="form-control" name="ev" step="1" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Alvázszám</label>
+                        <input type="text" class="form-control" name="alvazszam" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Lóerő</label>
+                        <input type="number" class="form-control" name="loero" step="1" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Kilométer óra állása</label>
+                        <input type="number" class="form-control" name="km" step="0.1" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Üzemanyag típusa</label>
+                        <input type="text" class="form-control" name="uzemanyag" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Fogyasztás (L/100km)</label>
+                        <input type="number" class="form-control" name="fogyasztas" step="0.1" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Üzemanyag szint (liter)</label>
+                        <input
+                            type="number"
+                            class="form-control"
+                            name="uzemanyag_szint"
+                            step="0.1"
+                        />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Hozzáadás</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="/frontend/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
